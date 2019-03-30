@@ -1,6 +1,10 @@
 # AndroidWifiPrinter
 Connect the HP printer via wifi and printer the pdf file.连接局域网打印机，并打印pdf文件。
 
+
+安卓自带的打印服务由于各种阉割版问题，不考虑。
+
+研究了一下 [PrinterShare](https://play.google.com/store/apps/details?id=com.dynamixsoftware.printershare) 暂时先使用wifi方式打印文件。
 ## 两种方式
 
 ### 第一种
