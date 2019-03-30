@@ -55,7 +55,7 @@ nsdManager.discoverServices(serviceType, NsdManager.PROTOCOL_DNS_SD, mDiscoveryL
 
 #### 打印文件
 
-使用[cups4j](https://github.com/harwey/cups4j)打印文件
+使用[cups4j](https://github.com/harwey/cups4j)打印文件，[这里](https://github.com/freevnshns/decser-android) 有jar包。
 
 pdf使用[iText5](https://itextpdf.com/en/products/itext-5-legacy)生成
 
@@ -93,3 +93,4 @@ Socket socket = new Socket("192.168.223.1", 9100);
 之后通过抓包[PrinterShare](https://play.google.com/store/apps/details?id=com.dynamixsoftware.printershare) 的数据，发现它发送了 [PCL](https://en.wikipedia.org/wiki/Printer_Command_Language) 格式数据。
 
 可通过 [**genPCLm.cpp**](https://github.com/ibevilinc/WFDSPrintPlugin/blob/master/jni/wprint/plugins/genPCLm/src/genPCLm.cpp) 生成。由于ndk 不熟，没有深入研究。
+[这里](https://github.com/twaugh/hplip/tree/master/ppd/hpcups) 有所有惠普打印机的适配信息。
