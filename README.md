@@ -16,6 +16,14 @@ Connect the HP printer via wifi and printer the pdf file.连接局域网打印�
 1.初始化
 
 ```java
+private String serviceType = "_ipp._tcp";
+private String serviceName = "nsdChat";
+
+NsdServiceInfo nsdServiceInfo = new NsdServiceInfo();
+nsdServiceInfo.setServiceType(serviceType);
+nsdServiceInfo.setServiceName(serviceName);
+nsdServiceInfo.setPort(9000);
+
 NsdManager nsdManager = (NsdManager) getApplicationContext().getSystemService(Context.NSD_SERVICE);
 ```
 
